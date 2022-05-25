@@ -1,0 +1,49 @@
+/* Header Section */
+.header-sh {
+    display: table;
+    min-width: 100%;
+    min-height: 99%;
+    background: #e5e5e5 url(../../../../public/img/intro-bg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    filter: brightness(62%);
+    padding: 100px 0;
+}
+
+.header-sh .overlay {
+    /*background: rgba(0, 0, 0, 0.36);*/
+    /*height: 1920px;*/
+    /*width: 1020px;*/
+}
+
+.header-sh h1 {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 82px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.header-sh h1 span {
+    font-weight: 800;
+    color: #5ca9fb;
+}
+
+.header-sh p {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0 auto 60px;
+}
+
+header-sh .intro-text {
+    padding-top: 350px;
+    padding-bottom: 200px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+}

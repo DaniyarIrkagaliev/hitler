@@ -1,0 +1,123 @@
+
+#rule {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    padding: 100px 0;
+}
+
+#rule h1, h2, h3{
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    text-align: center;
+}
+
+#rule  .section-title h2 {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+#rule  .section-title h2::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, #ffffff 0%, #6372ff 100%);
+    height: 4px;
+    width: 130px;
+    bottom: 0;
+    margin-left: -65px;
+    left: 50%;
+    border-radius: 2px;
+}
+#rule  .section-title h1 {
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+#rule  .section-title h1::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(to right, #ffffff 0%, #af0000 100%);
+    height: 4px;
+    width: 130px;
+    bottom: 0;
+    margin-left: -65px;
+    left: 50%;
+    border-radius: 2px;
+}
+
+
+
+span.emphasis{
+    font-weight: 800;
+}
+
+
+#rule .about-text li {
+    margin-bottom: 6px;
+    margin-left: 6px;
+    list-style: none;
+    padding: 0;
+}
+
+#rule .about-text li:before {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: #5ca9fb;
+    font-size: 11px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+#rule img {
+    width: 520px;
+    margin-top: 10px;
+    background: #fff;
+    border-right: 0;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+}
+
+#rule p {
+    font-size: 20px;
+    /*line-height: 24px;*/
+    margin: 30px 0;
+}
+#rule p.emphasis{
+    font-style: italic;
+    font-weight: 650;
+}
+#rule .warning{
+    color: #830101;
+}
+
+table {
+    margin: auto;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 6px;
+    border-color: grey;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+td {
+    display: table-cell;
+    vertical-align: center;
+}
+#rule ul {
+    margin: 22px;
+    list-style-type: disc;
+}
+#rule li {
+    font-size: 21px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}

@@ -1,0 +1,109 @@
+
+login{
+    background: #f4f4f4;
+}
+
+.login-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.login-colm-form {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.login-colm-form .form-container {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.login-colm-form .form-container input, .colm-form .form-container {
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.login-colm-form .form-container input {
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    padding: 0 8px;
+    outline: none;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.login-colm-form .form-container input:focus {
+    top:-12px;
+    font-size:12px;
+    border-color: rgba(2, 2, 2, 0.24);
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.login-colm-form .form-container .btn-login {
+    background-color: #2a5f88;
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 0 16px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.login-colm-form .form-container a {
+    display: block;
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #dadde1;
+}
+
+.login-colm-form .form-container a:hover {
+    text-decoration: underline;
+}
+
+.login-colm-form .form-container .btn-new {
+    background-color: #b60303;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 12px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.login-colm-form p {
+    font-size: 14px;
+}
+
+.login-colm-form p a {
+    text-decoration: none;
+    color: #1c1e21;
+    font-weight: 600;
+}
+
+.login-colm-form p a:hover {
+    text-decoration: underline;
+}
