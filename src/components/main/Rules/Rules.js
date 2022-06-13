@@ -1,16 +1,9 @@
 import {Navigation} from "../Navigation";
-import {Footer} from "../../footer/Footer";
-import { useState, useEffect } from "react";
-import JsonData from "../../../data/landing-data.json";
 import '../../commonText.css'
 import './rules.css'
 
 
 export const Rules = (props) => {
-    const [landingPageData, setLandingPageData] = useState({});
-    useEffect(() => {
-        setLandingPageData(JsonData);
-    }, []);
     return (
         <div>
             <div id="rule">
@@ -381,8 +374,6 @@ export const Rules = (props) => {
                     </div>
                 </div>
             </div>
-
-            <Footer data={landingPageData.Contact} />
         </div>
     );
 };
