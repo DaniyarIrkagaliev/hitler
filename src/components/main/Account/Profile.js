@@ -1,26 +1,30 @@
 import "./profile.css"
 
+import JsonProfile from "../../../data/testUserData.json";
+import {Navigation} from "../Navigation";
 
 export const Profile = (props) => {
 
     return (
         <div>
+            {JsonProfile.map(profile =>
             <div className="container bootstrap snippets bootdeys">
                 <div className="row" id="user-profile">
                     <div className="col-lg-3 col-md-4 col-sm-4">
                         <div className="main-box clearfix">
-                            <h2>John Doe </h2>
-                            <div className="profile-status">
-                                <i className="fa fa-check-circle"></i> Online
-                            </div>
-                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt=""
+                            <h4>{profile.username}</h4>
+
+                            <img src={profile.img_id} alt=""
                                  className="profile-img img-responsive center-block"/>
+
                             <div className="profile-label">
                                 <span className="label label-danger">Admin</span>
                             </div>
+
                             <div className="profile-since">
                                 Member since: Jan 2012
                             </div>
+
                             <div className="profile-details">
                                 <ul className="fa-ul">
                                     <li><i className="fa-li fa fa-truck"></i>Orders: <span>456</span></li>
@@ -50,7 +54,7 @@ export const Profile = (props) => {
                                             Username
                                         </div>
                                         <div className="profile-user-details-value">
-                                            John
+                                            @{profile.username}
                                         </div>
                                     </div>
 
@@ -59,23 +63,17 @@ export const Profile = (props) => {
                                             Email
                                         </div>
                                         <div className="profile-user-details-value">
-                                            johndoe@bootdey.com
+                                            {profile.email}
                                         </div>
                                     </div>
-                                    <div className="profile-user-details clearfix">
-                                        <div className="profile-user-details-label">
-                                            Phone number
-                                        </div>
-                                        <div className="profile-user-details-value">
-                                            011 223 344 556 677
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            )}
         </div>
     );
 };
