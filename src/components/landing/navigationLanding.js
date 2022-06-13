@@ -33,11 +33,11 @@ export const NavigationLanding = (props) => {
                                 Команда
                             </a>
                         </li>
-                        <li>
-                            <Link to="/login">
-                                Login
-                            </Link>
-                        </li>
+                        {/*<li>*/}
+                        {/*    <Link to="/login">*/}
+                        {/*        Login*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
 
                     </ul>
                 </div>
