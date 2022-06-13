@@ -11,7 +11,7 @@ export const Navigation = (props) => {
         setIsOpen(!isOpen);
     }
 
-    const {photo, name} = props.data;
+    const {img_id, username} = props.data;
 
     return (
         <nav id='navigate' className='navbar navbar-default navbar-fixed-top'>
@@ -32,7 +32,7 @@ export const Navigation = (props) => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/rules" data={props.data}>
+                            <Link to="/rules">
                                 Правила
                             </Link>
                         </li>
@@ -43,9 +43,12 @@ export const Navigation = (props) => {
                         </li>
 
                         <li onClick={togglePopup}>
+
                             <Link to>
-                                <img className='profile-logo-mini' src={photo} alt="conversation"/>
+                                <img className='profile-logo-mini' src={img_id} alt={username}/>
+
                         </Link>
+
                         </li>
 
                     </ul>
