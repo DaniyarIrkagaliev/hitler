@@ -8,7 +8,11 @@ export const HomeHeader = (props) => {
                     <div className='container'>
                         <div className='row'>
                             <div className='col-md-8 col-md-offset-2 intro-text'>
-
+                                <li className='btn btn-start '>
+                                    <Link  to="/home" >
+                                       <h1>ИГРАТЬ</h1>
+                                    </Link>
+                                </li>
                             </div>
                         </div>
                     </div>

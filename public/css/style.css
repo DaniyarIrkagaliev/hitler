@@ -272,7 +272,6 @@ a:focus,
 .intro {
     display: table;
     width: 100%;
-
     padding: 0;
     background: url(../img/intro-bg.png) center center no-repeat;
     background-color: #e5e5e5;
@@ -284,7 +283,6 @@ a:focus,
 
 .intro .overlay {
     background: rgba(0, 0, 0, 0.36);
-
     min-height: 99%;
 }
 
