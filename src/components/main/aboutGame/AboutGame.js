@@ -5,6 +5,7 @@ import {Footer} from "../../footer/Footer";
 
 import JsonData from "../../../data/landing-data.json";
 import { useState, useEffect } from "react";
+import JsonProfile from "../../../data/testUserData.json";
 
 export const AboutGame = (props) => {
     const [landingPageData, setLandingPageData] = useState({});
@@ -13,7 +14,11 @@ export const AboutGame = (props) => {
     }, []);
     return (
         <div>
-            <Navigation/>
+            {JsonProfile.map(profile =>
+                <Navigation
+                    data={profile}
+                    key ={profile.id}/>
+            )}
             <License/>
 
             <Footer data={landingPageData.Contact} />
