@@ -1,6 +1,4 @@
-body{margin-top:20px;
-    background:#eee;
-}
+
 
 h3 > span {
     border-bottom: 2px solid #C2C2C2;
@@ -8,6 +6,10 @@ h3 > span {
     padding: 0 5px 5px;
 }
 
+.profile{
+    margin-top:100px;
+    margin-bottom: 300px;
+}
 /* USER PROFILE */
 #user-profile h4 {
     padding-right: 15px;
@@ -105,7 +107,6 @@ h3 > span {
     -o-box-shadow: 1px 1px 2px 0 #CCCCCC;
     -ms-box-shadow: 1px 1px 2px 0 #CCCCCC;
     box-shadow: 1px 1px 2px 0 #CCCCCC;
-    margin-bottom: 16px;
     padding: 20px;
 }
 .main-box h4 {

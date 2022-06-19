@@ -1,6 +1,5 @@
 import "./style.css"
 
-import {Link} from "react-router-dom";
 export const NavigationLanding = (props) => {
     return (
         <nav id='menu' className='navbar navbar-default navbar-fixed-top'>

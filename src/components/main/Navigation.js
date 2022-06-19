@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import './styles/Nav.css'
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import Popup from "./Account/popupComp";
 
 export const Navigation = (props) => {
@@ -19,7 +19,9 @@ export const Navigation = (props) => {
                 <div className='navbar-header'>
                     <ul>
                         <li>
-                            <Link to="/home"> <a className='navbar-brand'>Secret Hitler</a></Link>
+                            <Link to="/home">
+                                <a className='navbar-brand'>Secret Hitler</a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

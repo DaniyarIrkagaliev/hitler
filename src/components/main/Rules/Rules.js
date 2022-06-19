@@ -1,4 +1,4 @@
-import {Navigation} from "../Navigation";
+
 import '../../commonText.css'
 import './rules.css'
 
