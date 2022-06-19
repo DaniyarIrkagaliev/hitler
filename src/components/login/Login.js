@@ -1,13 +1,21 @@
 import * as React from 'react';
-import {Component} from "react";
 
+import {Link, Navigate} from "react-router-dom";
 import './Login.css';
 import '../../index.css';
-import {Link} from "react-router-dom";
+import useAuth from "./utils/useAuth";
 
-export default class Login extends Component {
-    render() {
-        return (
+
+
+function Login() {
+
+    const auth = useAuth();
+
+        return auth.user ? (<Navigate
+            to={{
+                pathname: "/"
+            }}
+        />):(
             <div>
                 <div className="login-row">
                     <div className="login-colm-form">
@@ -25,5 +33,5 @@ export default class Login extends Component {
                 </div>
             </div>
         );
-    }
 }
+export default Login;

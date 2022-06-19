@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const Popup = props => {
 
-    const {photo, name} = props.data;
+    const {img_id, username} = props.data;
     return (
 
 
@@ -13,10 +13,10 @@ const Popup = props => {
             <div className="box">
                 <span className="close-icon" onClick={props.handleClose}>x</span>
                 <div className="row col-sm-5">
-                    <img className='profile-logo-prew' src={photo} alt="conversation"/>
+                    <img className='profile-logo-prew' src={img_id} alt="conversation"/>
                 </div>
                 <div className="row col-sm-5">
-                    <h3>{name}</h3>
+                    <h3>{username}</h3>
                     <ul>
                         <li>
                             <Link to="/profile"> Мой профиль</Link>

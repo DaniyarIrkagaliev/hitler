@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
+
 import {Route, Routes} from "react-router-dom";
-import JsonData from "./data/landing-data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 
@@ -8,9 +7,11 @@ import LandingMain from "./components/LandingMain";
 import Login from "./components/login/Login";
 import Register from "./components/login/Register";
 import Home from "./components/HomePage";
-import {Rules} from "./components/main/Rules/Rules";
 import AboutGame from "./components/main/aboutGame/AboutGame";
 import Profile from "./components/main/Account/Profile";
+import RulePage from "./components/main/Rules/RulePage";
+import PrivateRoute from "./components/customRoutes/PrivateRoute";
+import useAuth from "./components/login/utils/useAuth";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
@@ -18,25 +19,55 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const App = () => {
-    const [landingPageData, setLandingPageData] = useState({});
-    useEffect(() => {
-        setLandingPageData(JsonData);
-    }, []);
+    const auth = useAuth();
 
-    return (
+    return(
         <div>
-            <Routes>
-                <Route path="/" element={<LandingMain/>}/>
-                <Route path="/home" element={<Home/>}/>
-                <Route path="/rules" element={<Rules/>}/>
-                <Route path="/login" element={<Login/>}/>
-                <Route path="/register" element={<Register/>}/>
-                <Route path="/about" element={<AboutGame/>}/>
+                     <Routes>
+                         <Route path="/" element={<LandingMain/>}/>
+                         <Route path="/login" element={<Login/>}/>
+                         <Route path="/register" element={<Register/>}/>
+                         <Route path="/home" element={<Home/>}/>
 
-                <Route path="/profile" element={<Profile/>}/>
-            </Routes>
-        </div>
+
+                         <Route path="/home" element={<PrivateRoute>
+                             <Home/></PrivateRoute>}/>
+                         <Route path="/settings" element={<PrivateRoute>
+                             <RulePage/></PrivateRoute>}/>
+                         <Route path="/profile" element={<PrivateRoute>
+                             <AboutGame/></PrivateRoute>}/>
+                         <Route path="/admin" element={<PrivateRoute >
+                             <Profile/></PrivateRoute>}/>
+
+                     </Routes>
+                 </div>
     );
+
+    // return auth.isLoaded ?(
+    //     <div>
+    //         <Routes>
+    //             <Route path="/" element={<LandingMain/>}/>
+    //             <Route path="/login" element={<Login/>}/>
+    //             <Route path="/register" element={<Register/>}/>
+    //
+    //
+    //
+    //             <Route path="/home" element={<PrivateRoute>
+    //                 <Home/></PrivateRoute>}/>
+    //             <Route path="/settings" element={<PrivateRoute>
+    //                 <RulePage/></PrivateRoute>}/>
+    //             <Route path="/profile" element={<PrivateRoute>
+    //                 <AboutGame/></PrivateRoute>}/>
+    //             <Route path="/admin" element={<PrivateRoute >
+    //                 <Profile/></PrivateRoute>}/>
+    //
+    //         </Routes>
+    //     </div>
+    // ): (
+    //     <div className="body">
+    //         <h1>Загрузка</h1>
+    //     </div>
+    // )
 };
 
 export default App;

@@ -114,10 +114,7 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
-    "git1": "https://github.com/DaniyarIrkagaliev"
+    "git1": "https://github.com/DaniyarIrkagaliev/hitler"
   },
   "Features": [
     {

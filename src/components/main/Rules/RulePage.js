@@ -1,17 +1,17 @@
-import "./aboutGame.css"
+
 import {Navigation} from "../Navigation";
-import {License} from "./License";
 import {Footer} from "../../footer/Footer";
-
 import JsonData from "../../../data/landing-data.json";
+import JsonProfile from "../../../data/testUserData.json"
 import { useState, useEffect } from "react";
-import JsonProfile from "../../../data/testUserData.json";
+import Rules from "./Rules";
 
-export const AboutGame = (props) => {
+export const RulePage = (props) => {
     const [landingPageData, setLandingPageData] = useState({});
     useEffect(() => {
         setLandingPageData(JsonData);
     }, []);
+
     return (
         <div>
             {JsonProfile.map(profile =>
@@ -19,11 +19,10 @@ export const AboutGame = (props) => {
                     data={profile}
                     key ={profile.id}/>
             )}
-            <License/>
-
+            <Rules/>
             <Footer data={landingPageData.Contact} />
         </div>
     );
 };
 
-export default AboutGame;
+export default RulePage;

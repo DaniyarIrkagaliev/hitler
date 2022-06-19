@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import './styles/Nav.css'
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import Popup from "./Account/popupComp";
 
 export const Navigation = (props) => {
@@ -11,7 +11,7 @@ export const Navigation = (props) => {
         setIsOpen(!isOpen);
     }
 
-    const {photo, name} = props.data;
+    const {img_id, username} = props.data;
 
     return (
         <nav id='navigate' className='navbar navbar-default navbar-fixed-top'>
@@ -19,7 +19,9 @@ export const Navigation = (props) => {
                 <div className='navbar-header'>
                     <ul>
                         <li>
-                            <Link to="/home"> <a className='navbar-brand'>Secret Hitler</a></Link>
+                            <Link to="/home">
+                                <a className='navbar-brand'>Secret Hitler</a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -32,7 +34,7 @@ export const Navigation = (props) => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/rules" data={props.data}>
+                            <Link to="/rules">
                                 Правила
                             </Link>
                         </li>
@@ -43,9 +45,12 @@ export const Navigation = (props) => {
                         </li>
 
                         <li onClick={togglePopup}>
+
                             <Link to>
-                                <img className='profile-logo-mini' src={photo} alt="conversation"/>
+                                <img className='profile-logo-mini' src={img_id} alt={username}/>
+
                         </Link>
+
                         </li>
 
                     </ul>
