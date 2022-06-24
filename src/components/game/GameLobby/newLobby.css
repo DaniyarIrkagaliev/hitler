@@ -1,0 +1,165 @@
+.action_menu-box {
+    width: 200vh;
+    height: 100vh;
+    z-index: 11;
+    position: absolute;
+    padding: 15px 0;
+    top: 0;
+    left: 0;
+}
+
+.action_menu {
+    width: 50vw;
+    height: 50vh;
+    z-index: 12;
+    position: relative;
+    margin: 10vh 10vw;
+    background-color: rgba(133, 134, 136, 0.83);
+    color: white;
+    border-radius: 15px;
+    top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.action_menu-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.action_menu-box ul li {
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.action_menu-box ul li i {
+    padding-right: 10px;
+}
+.action_menu  button{
+    background-color: #2a5f88;
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 0 16px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.action_menu .game-input input, .colm-form .form-container {
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.action_menu .game-input input {
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    padding: 0 8px;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.action_menu .game-input input:focus {
+    top:-12px;
+    font-size:12px;
+    border-color: rgba(2, 2, 2, 0.24);
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.closer{
+    cursor: pointer;
+    position: static;
+    padding-left: 11px;
+    padding-top: 5px;
+    background: #2a5f88;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+/*SWITCH private*/
+.switchToggle input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.switchToggle label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 70px;
+    max-width: 70px;
+    height: 30px;
+    background: #d1d1d1;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+
+}
+
+.switchToggle label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.switchToggle input:checked + label, .switchToggle input:checked + input + label {
+    background: #2a5f88;
+}
+
+.switchToggle input + label:before, .switchToggle input + input + label:before {
+    content: 'Нет';
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    width: 26px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+}
+
+.switchToggle input:checked + label:before, .switchToggle input:checked + input + label:before {
+    content: 'Да';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 26px;
+    height: 26px;
+    border-radius: 90px;
+    transition: 0.3s;
+    text-indent: 0;
+    color: #fff;
+}
+
+.switchToggle input:checked + label:after, .switchToggle input:checked + input + label:after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+}
+
+.switchToggle label:active:after {
+    width: 60px;
+}
+
+.toggle-switchArea {
+    margin: 10px 0 10px 0;
+}
