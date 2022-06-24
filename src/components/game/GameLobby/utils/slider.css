@@ -1,0 +1,36 @@
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    z-index: 999;
+    }
+
+.slider {
+    border-radius: 10px;
+    width: 300px;
+}
+.ranges{
+    display: flex;
+    position: relative;
+}
+
+.input {
+     position: relative;
+}
+
+.last{
+    position: absolute;
+    right: 0;
+}
+
+.slider2 {
+     border-radius: 0;
+     width: 100%;
+     position: relative;
+ }
+.tracker {
+     position: absolute;
+     height: 5px;
+     border-radius: 5px;
+     background-color: #2a5f88;
+ }
