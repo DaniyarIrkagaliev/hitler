@@ -1,4 +1,3 @@
-
 import {Route, Routes} from "react-router-dom";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -11,7 +10,7 @@ import AboutGame from "./components/main/aboutGame/AboutGame";
 import Profile from "./components/main/Account/Profile";
 import RulePage from "./components/main/Rules/RulePage";
 import PrivateRoute from "./components/customRoutes/PrivateRoute";
-import useAuth from "./components/login/utils/useAuth";
+import Lobbies from "./components/game/GameLobby/Lobbies";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
@@ -19,28 +18,31 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const App = () => {
-    const auth = useAuth();
 
-    return(
+    return (
         <div>
-                     <Routes>
-                         <Route path="/" element={<LandingMain/>}/>
-                         <Route path="/login" element={<Login/>}/>
-                         <Route path="/register" element={<Register/>}/>
-                         <Route path="/home" element={<Home/>}/>
+            <Routes>
+                <Route path="/" element={<LandingMain/>}/>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="/register" element={<Register/>}/>
+                <Route path="/home" element={<Home/>}/>
 
 
-                         <Route path="/home" element={<PrivateRoute>
-                             <Home/></PrivateRoute>}/>
-                         <Route path="/settings" element={<PrivateRoute>
-                             <RulePage/></PrivateRoute>}/>
-                         <Route path="/profile" element={<PrivateRoute>
-                             <AboutGame/></PrivateRoute>}/>
-                         <Route path="/admin" element={<PrivateRoute >
-                             <Profile/></PrivateRoute>}/>
+                <Route path="/home" element={
+                    <Home/>}/>
+                <Route path="/rules" element={
+                    <RulePage/>}/>
+                <Route path="/about" element={
+                    <AboutGame/>}/>
+                <Route path="/profile" element={
+                    <Profile/>}/>
 
-                     </Routes>
-                 </div>
+                <Route path="/game" element={
+                    <Lobbies/>}/>
+
+
+            </Routes>
+        </div>
     );
 
     // return auth.isLoaded ?(
@@ -54,11 +56,11 @@ const App = () => {
     //
     //             <Route path="/home" element={<PrivateRoute>
     //                 <Home/></PrivateRoute>}/>
-    //             <Route path="/settings" element={<PrivateRoute>
+    //             <Route path="/rules" element={<PrivateRoute>
     //                 <RulePage/></PrivateRoute>}/>
-    //             <Route path="/profile" element={<PrivateRoute>
+    //             <Route path="/about" element={<PrivateRoute>
     //                 <AboutGame/></PrivateRoute>}/>
-    //             <Route path="/admin" element={<PrivateRoute >
+    //             <Route path="/profile" element={<PrivateRoute >
     //                 <Profile/></PrivateRoute>}/>
     //
     //         </Routes>
