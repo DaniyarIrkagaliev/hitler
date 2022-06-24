@@ -1,0 +1,42 @@
+
+.list-group {
+    margin-top: 100px;
+    width: 700px ;
+
+}
+
+.list-group-item {
+    margin-top: 10px;
+    border-radius: .95rem;
+    background: rgba(229, 229, 229, 0.22);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.list-group-item:hover {
+    transform: scaleX(1.02);
+}
+
+
+.list-group-item span {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.lob{
+    border-radius: .95rem;
+    border-color: rgb(219,219,219);
+    margin-top: 10px;
+    background: rgba(229, 229, 229, 0.22);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.lob:hover{
+    transform: scaleX(1.1);
+}
+
+.list-group-item i{
+    margin-right: 2px;
+}
