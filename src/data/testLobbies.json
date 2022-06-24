@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "lobby_name": "lobby",
+    "users_id": "",
+    "status": false,
+    "type": "public",
+    "stats": "",
+    "player1": "",
+    "player2": "",
+    "player3": "",
+    "player4": "",
+    "player5": "",
+    "player6": "",
+    "player7": "",
+    "player8": "",
+    "player9": "",
+    "player10": ""
+  },
+  {
+    "id": 2,
+    "lobby_name": "BRGD_Kazakh",
+    "users_id": "",
+    "status": false,
+    "type": "private",
+    "stats": "",
+    "player1": "",
+    "player2": "",
+    "player3": "",
+    "player4": "",
+    "player5": "",
+    "player6": "",
+    "player7": "",
+    "player8": "",
+    "player9": "",
+    "player10": ""
+  },
+  {
+    "id": 3,
+    "lobby_name": "BRGD",
+    "users_id": "",
+    "status": false,
+    "type": "private",
+    "stats": "",
+    "player1": "",
+    "player2": "",
+    "player3": "",
+    "player4": "",
+    "player5": "",
+    "player6": "",
+    "player7": "",
+    "player8": "",
+    "player9": "",
+    "player10": ""
+  }
+]
+
