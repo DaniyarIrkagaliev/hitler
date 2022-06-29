@@ -14,7 +14,7 @@ export const NavigationLanding = (props) => {
                     <ul className='nav navbar-nav navbar-right'>
                         <li>
                             <a href='#portfolio' className='page-scroll'>
-                                Gallery
+                                Галерея
                             </a>
                         </li>
                         <li>
