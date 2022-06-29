@@ -11,6 +11,7 @@ import Profile from "./components/main/Account/Profile";
 import RulePage from "./components/main/Rules/RulePage";
 import PrivateRoute from "./components/customRoutes/PrivateRoute";
 import Lobbies from "./components/game/GameLobby/Lobbies";
+import Game from "./components/game/GameRoom/Game";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
     speed: 1000,
@@ -37,9 +38,11 @@ const App = () => {
                 <Route path="/profile" element={
                     <Profile/>}/>
 
-                <Route path="/game" element={
+                <Route path="/lobbies" element={
                     <Lobbies/>}/>
 
+                <Route path="/game" element={
+                    <Game/>}/>
 
             </Routes>
         </div>
