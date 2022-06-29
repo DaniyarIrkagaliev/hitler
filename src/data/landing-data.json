@@ -4,63 +4,62 @@
     "paragraph": "Студентов 3 курса ФКН группы 6.2 по теме 'ИГРА SECRET HITLER'"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": " Целью данной работы является разработка веб-приложение для игры Secret Hitler",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Разработка дизайна приложения",
+      "Разработка пользовательского интерфейса",
+      "Разработка модулей взаимодействия Frontend и Backend частей приложения"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
+      "Регистрация и авторизация пользователей",
+      "Возможность создавать и заходить в лобби",
       "Exercitation ullamco",
       "Lorem ipsum dolor"
     ]
   },
   "Gallery": [
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
-    },
-    {
-      "title": "Project Title",
+      "title": "card",
       "largeImage": "img/portfolio/05-large.jpg",
       "smallImage": "img/portfolio/05-small.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
+      "title": "Lobbies page",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
-    },
-    {
-      "title": "Project Title",
+      "title": "Project code",
       "largeImage": "img/portfolio/08-large.jpg",
       "smallImage": "img/portfolio/08-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Card version",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Secret Hitler",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Role Cards",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Landing",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project code",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project github",
       "largeImage": "img/portfolio/09-large.jpg",
       "smallImage": "img/portfolio/09-small.jpg"
     }
@@ -99,14 +98,14 @@
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
+      "img": "img/team/01.png",
       "name": "Иркагалиев Данияр Айболатович",
-      "job": "Frontend - REACT JS, Backend",
+      "job": "Frontend - REACT JS, design",
       "link": "https://vk.com/daniyar_irkagaliev",
       "link2": "https://github.com/DaniyarIrkagaliev"
     },
     {
-      "img": "img/team/02.jpg",
+      "img": "img/team/02.png",
       "name": "Болдырев Алексей Дмитриевич",
       "job": "Backend",
       "link": "https://vk.com/balexeyd",
@@ -118,29 +117,45 @@
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
+      "icon": "fa  fa-code",
       "title": "Java Core",
       "text": "Backend"
     },
     {
-      "icon": "fa fa-comments-o",
-      "title": "Javascript",
-      "text": ""
+      "icon": "fa fa-database",
+      "title": "MySQL",
+      "text": "DataBase"
+    },
+
+    {
+      "icon": "fa fa-folder-open",
+      "title": "Gradle",
+      "text": "Сборщик"
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "React JS Native",
+      "icon": "fa fa-retweet",
+      "title": "Rest API",
+      "text": "Взаимодействие"
+    },
+    {
+      "icon": "fa  fa-code",
+      "title": "React JS",
       "text": "Frontend"
     },
     {
-      "icon": "fa fa-group",
-      "title": "Socket IO",
-      "text": "Frontend"
+      "icon": "fa fa-paint-brush",
+      "title": "fontawesome.io, Bootstrap, CSS",
+      "text": "Стилизация"
+    },
+    {
+      "icon": "fa  fa-share",
+      "title": "axios",
+      "text": "Взаимодействие"
     },
     {
       "icon": "fa fa-magic",
       "title": "Прочее",
-      "text": "fontawesome.io, jquery, Bootstrap"
+      "text": "jquery"
     }
   ]
 }
