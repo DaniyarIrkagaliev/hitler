@@ -3,9 +3,10 @@ import "./lobby.css"
 import profICO from '../../../public/card/secretrole.png'
 import emptyICO from '../../../public/card/emptyrole.png'
 import JsonLobby from "../../../data/testLobbies.json";
+import {useNavigate} from "react-router-dom";
 
 const LobbyEntity = (lobby) => {
-
+    let navigate = useNavigate();
 
     return (
         <div>
@@ -13,7 +14,7 @@ const LobbyEntity = (lobby) => {
             {JsonLobby.map(lobby =>
                 <li className="list-group-item d-flex justify-content-between align-content-center">
 
-                    <div className="container">
+                    <div className="container" onClick={() => navigate("/game")}>
                         <h4>{lobby.lobby_name}</h4>
                         <div className='col-sm-1'>
                             {lobby.type === "public" ?
