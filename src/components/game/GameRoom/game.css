@@ -1,0 +1,68 @@
+.game-box{
+    margin-top: 120px;
+    margin-right: 2vh;
+    margin-left: 2vh;
+
+}
+
+.track{
+    width: 70%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column!important;
+
+}
+.cont1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.cont1 .game-logs{
+    overflow: auto;
+    display: block;
+    height: 45vh;
+    width: 55vw;
+    border-radius: .95rem;
+    box-shadow: 5px 5px 10px 0px #d4d4d4;
+    border-color: #1d2129;
+    border-width: 1px;
+    margin: 12px;
+}
+
+.cont1 .game-logs ul {
+    position: static;
+    margin: 10px;
+}
+.cont1 .game-logs ul li {
+    padding-bottom: 1vh;
+}
+.articles{
+
+    /*justify-content: center;*/
+}
+
+.articles .article{
+    margin: 2px;
+}
+
+.game-box .players{
+    justify-content: center;
+    display: flex!important;
+}
+
+.player{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2px;
+}
+.player img{
+    border-radius: .95rem;
+}
+
+.player p{
+
+}
