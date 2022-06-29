@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "lobby_name": "lobby",
+    "users_id": "",
+    "player_count": 10,
+    "status": false,
+    "type": "public",
+    "stats": "",
+    "player1": "",
+    "player2": "",
+    "player3": "",
+    "player4": "",
+    "player5": "",
+    "player6": "",
+    "player7": "",
+    "player8": "",
+    "player9": "",
+    "player10": ""
+  }
+]
